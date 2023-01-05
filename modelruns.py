@@ -65,3 +65,12 @@ class ModelRuns():
             y_test_perf = self.performance(X_test_run, y_test_run)
             test_matrix = self.class_matrix(X_test_run, y_test_run)
             return print(f"Test Report: \n{y_test_perf}")
+        
+        
+def record_results(model_name=None, model=None,
+                   time_dic=None, time_results=None,
+                    acc_dic=None, roc_auc_dic=None):
+    
+    time_dic[model_name] = time_results
+    acc_dic[model_name] = model.score(X_test, y_test)
+    roc_auc_dic[model_name] = roc_auc_score(y_test, model.predict_proba(X_test)[:,1])
