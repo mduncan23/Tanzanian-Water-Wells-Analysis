@@ -4,7 +4,7 @@ from sklearn.metrics import roc_curve, roc_auc_score, classification_report, auc
 plot_roc_curve, confusion_matrix, plot_confusion_matrix
 
 from sklearn.model_selection import train_test_split, cross_validate,\
-KFold, cross_val_score, ShuffleSplit, RandomizedSearchCV, GridSearchCV
+cross_val_score, RandomizedSearchCV, GridSearchCV
 
 
 class ModelRuns():
@@ -59,8 +59,8 @@ class ModelRuns():
             y_test_auc = self.roc_auc_custom(X_test_run, y_test_run)
             train_matrix = self.class_matrix(X_train_run, y_train_run)
             test_matrix = self.class_matrix(X_test_run, y_test_run)
-            return print(f"Train Report: \n{y_train_perf}\nAUC-ROC Score:{y_train_auc}\n"), \
-            print(f"Test Report: \n{y_test_perf}\nAUC-ROC Score:{y_test_auc}")
+            return print(f"Train Report: \n{y_train_perf}\nROC-AUC Score:{y_train_auc}\n"), \
+            print(f"Test Report: \n{y_test_perf}\nROC-AUC Score:{y_test_auc}")
         else:
             y_test_perf = self.performance(X_test_run, y_test_run)
             test_matrix = self.class_matrix(X_test_run, y_test_run)
