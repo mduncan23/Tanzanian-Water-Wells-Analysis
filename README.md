@@ -7,12 +7,14 @@
 ## Overview
 For this analysis, I have analyzed data on almost 60,000 wells across the country of Tanzania. I've utilized descriptive analysis, visualizations, and machine learning methods to provide recommendations on focus points for well repair efforts.
 
-![initial_plot](/photos/well.jpg)
+
 
 ## Business Problem
 Tanzania struggles with providing clean water to the people of its country. The goal of this analysis is to use data from existing wells throughout the country to identify the wells in need of repair. 
 
 This analysis is focused on assisting the Tanzanian Government reduce resources spent to identify water wells that are in need of repair to ensure that clean water is available to its citizens. 
+
+![initial_plot](/photos/well.jpg)
 
 ## Data
 
@@ -139,9 +141,9 @@ Using Stacking Classifier, I was able to achieve accuracy of 83% and an ROC-AUC 
 
 ![initial_plot](/photos/final_plot.png)
 
-![initial_plot](/photos/accuracy.png)
+![initial_plot](/photos/accuracy.jpg)
 
-![initial_plot](/photos/roc.png)
+![initial_plot](/photos/roc.jpg)
 
 The results table lets us clearly visualize the performance of the models run in this analysis. Overall, the Stacking Classifier has the best results with an accuracy of 82.5% and an ROC-AUC score of 90.3% on the test set. That being said, it took roughly 55 times longer to fit than the Random Forest Final Model.
 
