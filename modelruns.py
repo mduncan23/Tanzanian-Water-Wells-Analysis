@@ -69,7 +69,8 @@ class ModelRuns():
         
 def record_results(model_name=None, model=None,
                    time_dic=None, time_results=None,
-                    acc_dic=None, roc_auc_dic=None):
+                    acc_dic=None, roc_auc_dic=None,
+                  X_test=None, y_test=None):
     
     time_dic[model_name] = time_results
     acc_dic[model_name] = model.score(X_test, y_test)
