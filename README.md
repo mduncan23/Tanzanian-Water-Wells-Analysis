@@ -79,7 +79,7 @@ Even though only 34% of the wells that provide `enough` water are in need of rep
 ![initial_plot](/photos/quantity_percent.png)
 
 #### `extraction_type_class` Visualization
-When we look at well functionality based on the `extraction_type_class` of the well we can clearly see that mechanical wells have a lower functionality rate than the manual powered wells. 
+When we look at well functionality based on the `extraction_type_class` of the well we can clearly see that automatic (not man-powered) wells have a lower functionality rate than the manual powered wells. 
 
 62% of all wells extracted by motor and 57% of those extracted by wind power are in need of repair. It makes sense that the more complex wells would need repairs more often and should be a focus for inspections. 
 
@@ -141,9 +141,6 @@ Using Stacking Classifier, I was able to achieve accuracy of 83% and an ROC-AUC 
 
 ![initial_plot](/photos/final_plot.png)
 
-![initial_plot](/photos/accuracy.jpg)
-
-![initial_plot](/photos/roc.jpg)
 
 The results table lets us clearly visualize the performance of the models run in this analysis. Overall, the Stacking Classifier has the best results with an accuracy of 82.5% and an ROC-AUC score of 90.3% on the test set. That being said, it took roughly 55 times longer to fit than the Random Forest Final Model.
 
@@ -154,7 +151,7 @@ When looking at time-to-fit in addition to pure performance metrics, the Stackin
 ## Conclusions
 
 This report found four areas to focus on:
-- Mechanical wells rather than manual. 
+- Automatically powered wells rather than man-power wells 
 - Wells that provide enough water rather than dry or seasonal wells 
 - Efforts should be focused on multiple communal standpipe wells as these will have the greatest impact to the communities
 - Efforts should be focused in the Lindi and Mtwara Regions
