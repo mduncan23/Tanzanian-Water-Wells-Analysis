@@ -209,6 +209,6 @@ See the full analysis in the [Jupyter Notebook](./Water_Well_Project_Notebook.ip
 │   └── well.jpg
 ├── Water_Well_Project_Notebook.ipynb
 ├── modelruns.py
-├── presentation.pdf
+├── Water_Well_Presentation.pdf
 └── README.md
 ```
