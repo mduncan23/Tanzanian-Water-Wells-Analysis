@@ -176,7 +176,7 @@ Further Analysis could yield additional insights to improve predictions of wells
 
 ## For More Information
 
-See the full analysis in the [Jupyter Notebook](./Water_Well_Project_Notebook.ipynb) or review this [presentation](./presentation.pdf).
+See the full analysis in the [Jupyter Notebook](./Water_Well_Project_Notebook.ipynb) or review this [presentation](./Water_Well_Presentation.pdf).
 
 **For additional info, contact:**
 - Matthew Duncan: mduncan0923@gmail.com
@@ -209,6 +209,6 @@ See the full analysis in the [Jupyter Notebook](./Water_Well_Project_Notebook.ip
 │   └── well.jpg
 ├── Water_Well_Project_Notebook.ipynb
 ├── modelruns.py
-├── presentation.pdf
+├── Water_Well_Presentation.pdf
 └── README.md
 ```
